@@ -9,12 +9,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(color: Colors.amber),
-      child: const Center(
-       child: Text('This works offline!!!',
-          textDirection: TextDirection.ltr,
-        ),
+    return const Center(
+     child: Text('This works offline!!!',
+        textDirection: TextDirection.ltr,
+        style: TextStyle(
+          fontSize: 32,
+          color: Colors.black
+        )
       ),
     );
   }
