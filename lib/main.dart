@@ -9,13 +9,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-     child: Directionality(
-       textDirection: TextDirection.ltr,
-       child: Text('This works offline',
-                textAlign: TextAlign.center
-            ),
-     ) 
+    return Container(
+      child: const Center(
+       child: Directionality(
+         textDirection: TextDirection.ltr,
+         child: Text('This works offline'),
+       ) 
+      ),
     );
   }
 }
