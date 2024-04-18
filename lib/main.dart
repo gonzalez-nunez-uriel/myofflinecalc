@@ -11,13 +11,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Offline Material App',
-      home: Text('This works offline!!!',
-         textDirection: TextDirection.ltr,
-         style: TextStyle(
-           fontSize: 32,
-           color: Colors.black
-         )
-       ),
+      home: Scaffold(
+        body: Text('This works offline!!!',
+           textDirection: TextDirection.ltr,
+           style: TextStyle(
+             fontSize: 32,
+             color: Colors.black
+           )
+         ),
+      ),
     );
   }
 }
