@@ -9,13 +9,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('This works offline!!!',
-       textDirection: TextDirection.ltr,
-       style: TextStyle(
-         fontSize: 32,
-         color: Colors.black
-       )
-     );
+    return const MaterialApp(
+      title: 'Offline Material App',
+      home: Text('This works offline!!!',
+         textDirection: TextDirection.ltr,
+         style: TextStyle(
+           fontSize: 32,
+           color: Colors.black
+         )
+       ),
+    );
   }
 }
 
