@@ -12,10 +12,9 @@ class MyApp extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(color: Colors.amber),
       child: const Center(
-       child: Directionality(
-         textDirection: TextDirection.ltr,
-         child: Text('This works offline!!!'),
-       ) 
+       child: Text('This works offline!!!',
+          textDirection: TextDirection.ltr,
+        ),
       ),
     );
   }
