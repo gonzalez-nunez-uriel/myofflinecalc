@@ -6,6 +6,8 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
+  static const rowWidth = 3;
 
   @override
   Widget build(BuildContext context) {
@@ -15,91 +17,42 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Offline Calculator'),
         ),
-        body: const Column(
+        body: Column(
           children: [
-            Text('Please enter calculation'),
-            Row(
-              children: [
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-                Text(
-                  '1',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black
-                  ),
-                ),
-              ],
-            ),
+            const Text('Please enter calculation'),
+            buildRow(['1', '2', '3']),
+            buildRow(['4', '5', '6']),
+            buildRow(['7', '8', '9']),
           ],
         ),
       ),
     );
   }
 
+  TextButton buildButton(String textContent) {
+    return TextButton(
+      onPressed: (){},
+      child: Text(
+        textContent,
+        style: const TextStyle(
+          fontSize: 12,
+          color: Colors.black
+        ),
+      ),
+    );
+  }
 
+  Row buildRow(List<String> textContents){
+    assert(textContents.length == rowWidth);
+    
+    return const Row(
+      children: [
+        buildButton(textContents[0]),
+        buildButton(textContents[1]),
+        buildButton(textContents[2]),
+      ],
+    );
+  }
 }
 
 /*
