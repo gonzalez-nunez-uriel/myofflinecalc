@@ -22,12 +22,48 @@ class MyApp extends StatelessWidget {
               GridView.count(
                 crossAxisCount: 3,
                 children: const [
-                  Center(child: Text('1')),
-                  Center(child: Text('2')),
-                  Center(child: Text('3')),
-                  Center(child: Text('4')),
-                  Center(child: Text('5')),
-                  Center(child: Text('6')),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -36,6 +72,8 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
+
+
 }
 
 /*
