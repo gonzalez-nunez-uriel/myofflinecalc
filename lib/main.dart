@@ -15,13 +15,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Offline Calculator'),
         ),
-        body: Center(
+        body: const Center(
           child: Column(
             children: [
-              const Text('Please enter calculation'),
-              GridView.count(
-                crossAxisCount: 3,
-                children: const [
+              Text('Please enter calculation'),
+              Row(
+                children: [
                   Text(
                     '1',
                     style: TextStyle(
@@ -43,6 +42,35 @@ class MyApp extends StatelessWidget {
                       color: Colors.black
                     ),
                   ),
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                  Text(
+                    '1',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
                   Text(
                     '1',
                     style: TextStyle(
