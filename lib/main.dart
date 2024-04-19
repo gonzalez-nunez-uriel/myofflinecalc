@@ -35,11 +35,17 @@ class _MyHomePageState extends State<MyHomePage> {
   // Variable holding the current calculation displayed to the user
   // Is this the way you set initial state?
   String _calculation = "Please enter calculation";
+  bool inProgress = false;
 
   
   void _updateCalculation(String digit) {
     setState(() {
-      _calculation += digit;
+      if(!inProgress) {
+        inProgress = true;
+        _calculation = digit;
+      } else {
+        _calculation += digit;
+      }
     });
   }
 
