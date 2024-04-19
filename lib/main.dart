@@ -46,6 +46,7 @@ class MyApp extends StatelessWidget {
     assert(textContents.length == rowWidth);
     
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         buildButton(textContents[0]),
         buildButton(textContents[1]),
