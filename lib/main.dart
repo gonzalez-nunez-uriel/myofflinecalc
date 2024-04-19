@@ -15,87 +15,85 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Offline Calculator'),
         ),
-        body: const Center(
-          child: Column(
-            children: [
-              Text('Please enter calculation'),
-              Row(
-                children: [
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+        body: const Column(
+          children: [
+            Text('Please enter calculation'),
+            Row(
+              children: [
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                ],
-              ),
-              Row(
-                children: [
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                ],
-              ),
-              Row(
-                children: [
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                  Text(
-                    '1',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.black
-                    ),
+                ),
+                Text(
+                  '1',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black
                   ),
-                ],
-              ),
-            ],
-          )
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
