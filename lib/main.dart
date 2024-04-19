@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             const Text('Please enter calculation'),
-            buildRow(['1', '2', '3']),
-            buildRow(['4', '5', '6']),
             buildRow(['7', '8', '9']),
+            buildRow(['4', '5', '6']),
+            buildRow(['1', '2', '3']),
           ],
         ),
       ),
