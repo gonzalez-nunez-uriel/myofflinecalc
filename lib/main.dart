@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
   Row buildRow(List<String> textContents){
     assert(textContents.length == rowWidth);
     
-    return const Row(
+    return Row(
       children: [
         buildButton(textContents[0]),
         buildButton(textContents[1]),
