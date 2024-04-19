@@ -45,15 +45,14 @@ class MyApp extends StatelessWidget {
   }
 
   Row buildRow(List<String> textContents){
-    assert(textContents.length == rowWidth);
+    List<TextButton> buttons = textContents.map(
+      (e) {buildButton(e)}
+    );
     
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        buildButton(textContents[0]),
-        buildButton(textContents[1]),
-        buildButton(textContents[2]),
-      ],
+      children: buttons,
     );
   }
 }
