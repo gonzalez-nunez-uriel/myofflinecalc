@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   
   void _updateCalculation(String digit) {
     setState(() {
-      // Changes in the calculation displayed go here
+      _calculation += digit;
     });
   }
 
