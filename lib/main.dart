@@ -45,7 +45,14 @@ class MyApp extends StatelessWidget {
   }
 
   Row buildRow(List<String> textContents){
-    List<TextButton> buttons;
+    // This is intended to create a list with fixed size for efficiency
+    // but I am questioning whether this is a good idea or not
+    // specially for such a small and trivial optimization
+    // I want to finish it just to see if it works, but dang I think I wasted my time.
+    // How much memory does this dummy consume? Is it worth it? Does this prevent the compiler from
+    // doing some better optimizations. I would bet my coffe it does!
+    TextButton dummy = TextButton(onPressed: (){}, child: const Text(''),);
+    List<TextButton> buttons = List<TextButton>.filled(textContents.length, dummy, growable: false);
     
     for(int i = 0; i < textContents.length; i++) {
       buttons.add(buildButton(textContents[i]));
