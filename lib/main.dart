@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
     List<TextButton> buttons = List.empty(growable: true);
 
     for(int i = 0; i < textContents.length; i++) {
-      buttons.add(buildButton(textContents[i]));
+      buttons.add(buildDigitButton(textContents[i]));
     }
 
     return Row(
