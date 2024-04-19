@@ -10,19 +10,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Offline Material App',
+      title: 'Offline Calculator',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Offline Material App'),
+          title: const Text('Offline Calculator'),
         ),
         body: const Center(
-          child: Text(
-            'This works offline!!!',
-            style: TextStyle(
-              fontSize: 32,
-              color: Colors.black
-            ),
-          ),
+          child: Column(
+            children: [
+              Text('Please enter calculation'),
+            ],
+          )
         ),
       ),
     );
