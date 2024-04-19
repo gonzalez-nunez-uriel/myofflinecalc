@@ -36,12 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
   // Is this the way you set initial state?
   String _calculation = "Please enter calculation";
 
-  /*
-  void _updateCalculation() {
+  
+  void _updateCalculation(String digit) {
     setState(() {
       // Changes in the calculation displayed go here
     });
-  }*/
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   TextButton buildButton(String textContent) {
     return TextButton(
-      onPressed: (){},
+      onPressed: (){
+        _updateCalculation(textContent);
+      },
       child: Text(
         textContent,
         style: const TextStyle(
