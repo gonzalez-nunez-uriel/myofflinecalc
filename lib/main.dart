@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             buildRow(['7', '8', '9', 'clr']),
             buildRow(['4', '5', '6', '+']),
             buildRow(['1', '2', '3', '-']),
-            buildRow(['0', '.']),
+            buildRow(['0']),
             buildButton('Enter')
           ],
         ),
