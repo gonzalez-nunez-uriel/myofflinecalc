@@ -45,10 +45,11 @@ class MyApp extends StatelessWidget {
   }
 
   Row buildRow(List<String> textContents){
-    List<TextButton> buttons = textContents.map(
-      (e) {buildButton(e)}
-    );
+    List<TextButton> buttons;
     
+    for(int i = 0; i < textContents.length; i++) {
+      buttons.add(buildButton(textContents[i]));
+    }
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
