@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Offline Calculator'),
         ),
-        body: MyHomePage()
+        body: const MyHomePage()
+      ),
+    );
   }
-
-  
 }
 
 
