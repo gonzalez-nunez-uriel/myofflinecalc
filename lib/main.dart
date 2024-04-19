@@ -15,10 +15,21 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Offline Calculator'),
         ),
-        body: const Center(
+        body: Center(
           child: Column(
             children: [
-              Text('Please enter calculation'),
+              const Text('Please enter calculation'),
+              GridView.count(
+                crossAxisCount: 3,
+                children: const [
+                  Center(child: Text('1')),
+                  Center(child: Text('2')),
+                  Center(child: Text('3')),
+                  Center(child: Text('4')),
+                  Center(child: Text('5')),
+                  Center(child: Text('6')),
+                ],
+              ),
             ],
           )
         ),
