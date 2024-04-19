@@ -59,12 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
             buildRow(['4', '5', '6', '+']),
             buildRow(['1', '2', '3', '-']),
             buildRow(['0']),
-            buildButton('Enter')
+            buildEnterButton()
           ],
         );      
   }
 
-  TextButton buildButton(String textContent) {
+  TextButton buildDigitButton(String textContent) {
     return TextButton(
       onPressed: (){
         _updateCalculation(textContent);
@@ -72,6 +72,21 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Text(
         textContent,
         style: const TextStyle(
+          fontSize: 12,
+          color: Colors.black
+        ),
+      ),
+    );
+  }
+
+  TextButton buildEnterButton() {
+    return TextButton(
+      onPressed: (){
+        // TODO
+      },
+      child: const Text(
+        'Enter',
+        style: TextStyle(
           fontSize: 12,
           color: Colors.black
         ),
