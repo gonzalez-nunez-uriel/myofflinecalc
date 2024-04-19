@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
 
   Row buildRow(List<String> textContents){
 
-    List<TextButton> buttons = List.empty();
+    List<TextButton> buttons = List.empty(growable: true);
 
     for(int i = 0; i < textContents.length; i++) {
       buttons.add(buildButton(textContents[i]));
