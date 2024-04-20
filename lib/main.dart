@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Column(
           children: [
             Text(_calculation),
-            buildRowCustomBtns(['7', '8', '9'], [buildClearButton(textContent)]]),
+            buildRowCustomBtns(['7', '8', '9'], [buildClearButton()]),
             buildRow(['4', '5', '6', '+']),
             buildRow(['1', '2', '3', '-']),
             buildRow(['0']),
@@ -118,7 +118,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // the sp version is used only to impl the row with CLEAR
   Row buildRowCustomBtns(List<String> textContents, List<TextButton>? others){
-
 
     List<TextButton> buttons = List.empty(growable: true);
 
