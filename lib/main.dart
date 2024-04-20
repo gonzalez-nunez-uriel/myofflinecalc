@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Row buildRow(List<String> textContents, List<TextButton>? others){
+  Row buildRow(List<String> textContents, List<TextButton>? others = null){
 
     List<TextButton> buttons = List.empty(growable: true);
 
