@@ -100,14 +100,15 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  TextButton buildClearButton(String textContent) {
+  TextButton buildClearButton() {
+
     return TextButton(
       onPressed: (){
         _clearCalculation();
       },
-      child: Text(
-        textContent,
-        style: const TextStyle(
+      child: const Text(
+        'CLR',
+        style: TextStyle(
           fontSize: 12,
           color: Colors.black
         ),
@@ -117,6 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // the sp version is used only to impl the row with CLEAR
   Row buildRowCustomBtns(List<String> textContents, List<TextButton>? others){
+
 
     List<TextButton> buttons = List.empty(growable: true);
 
