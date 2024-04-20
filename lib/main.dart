@@ -33,8 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   // Variable holding the current calculation displayed to the user
-  // Is this the way you set initial state?
-  String _calculation = "Please enter calculation";
+  String _calculation = 'Please enter calculation';
   bool inProgress = false;
 
   
@@ -46,6 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
       } else {
         _calculation += digit;
       }
+    });
+  }
+
+  void _clearCalculation() {
+    setState(() {
+      inProgress = false;
+      _calculation = 'Please enter calculation';
     });
   }
 
@@ -86,6 +92,21 @@ class _MyHomePageState extends State<MyHomePage> {
       },
       child: const Text(
         'Enter',
+        style: TextStyle(
+          fontSize: 12,
+          color: Colors.black
+        ),
+      ),
+    );
+  }
+
+  TextButton buildClearButton() {
+    return TextButton(
+      onPressed: (){
+        _clearCalculation();
+      },
+      child: const Text(
+        'CLR',
         style: TextStyle(
           fontSize: 12,
           color: Colors.black
