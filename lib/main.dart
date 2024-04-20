@@ -115,12 +115,18 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Row buildRow(List<String> textContents){
+  Row buildRow(List<String> textContents, List<TextButton>? others){
 
     List<TextButton> buttons = List.empty(growable: true);
 
     for(int i = 0; i < textContents.length; i++) {
       buttons.add(buildDigitButton(textContents[i]));
+    }
+
+    if(others != null) {
+      for(int i = 0; i < others.length; i++) {
+        buttons.add(others[i]);
+      }
     }
 
     return Row(
