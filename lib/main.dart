@@ -61,10 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Column(
           children: [
             Text(_calculation),
-            buildRow(['7', '8', '9', 'clr']),
-            buildRow(['4', '5', '6', '+']),
-            buildRow(['1', '2', '3', '-']),
-            buildRow(['0']),
+            buildFirstRow(),
+            buildSecondRow(),
+            buildThirdRow(),
+            buildFourthRow(),
             buildEnterButton()
           ],
         );      
@@ -115,17 +115,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Row buildRow(List<String> textContents){
-
-    List<TextButton> buttons = List.empty(growable: true);
-
-    for(int i = 0; i < textContents.length; i++) {
-      buttons.add(buildDigitButton(textContents[i]));
-    }
-
+  Row buildRow(){
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: buttons,
+      children: ,
     );
   }
 }
