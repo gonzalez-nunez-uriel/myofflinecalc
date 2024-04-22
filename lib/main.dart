@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         );      
   }
 
-  TextButton buildDigitButton(String textContent) {
+  TextButton _buildDigitButton(String textContent) {
     return TextButton(
       onPressed: (){
         _updateCalculation(textContent);
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  TextButton buildClearButton() {
+  TextButton _buildClearButton() {
     return TextButton(
       onPressed: (){
         _clearCalculation();
@@ -120,10 +120,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        buildDigitButton('7'),
-        buildDigitButton('8'),
-        buildDigitButton('9'),
-        buildClearButton()
+        _buildDigitButton('7'),
+        _buildDigitButton('8'),
+        _buildDigitButton('9'),
+        _buildClearButton()
       ],
     );
   }
