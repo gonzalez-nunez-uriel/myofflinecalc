@@ -119,22 +119,15 @@ class _MyHomePageState extends State<MyHomePage> {
   // the sp version is used only to impl the row with CLEAR
   Row buildRowCustomBtns(List<String> textContents, List<TextButton>? others){
 
-    List<TextButton> buttons = List.empty(growable: true);
-
-    for(int i = 0; i < textContents.length; i++) {
-      buttons.add(buildDigitButton(textContents[i]));
-    }
+    final row = buildRow(textContents);
 
     if(others != null) {
       for(int i = 0; i < others.length; i++) {
-        buttons.add(others[i]);
+        row.children.add(others[i]);
       }
     }
 
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: buttons,
-    );
+    return row;
   }
 
   // A normal one and a special one
