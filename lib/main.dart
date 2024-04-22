@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Row buildRow(List<String> textContents, [List<TextButton>? others]){
+  Row buildRow(List<String> textContents, [List<TextButton>? customBtns]){
 
     List<TextButton> buttons = List.empty(growable: true);
 
@@ -123,9 +123,9 @@ class _MyHomePageState extends State<MyHomePage> {
       buttons.add(buildDigitButton(textContents[i]));
     }
 
-    if(others != null) {
-      for(int i = 0; i < others.length; i++) {
-        buttons.add(others[i]);
+    if(customBtns != null) {
+      for(int i = 0; i < customBtns.length; i++) {
+        buttons.add(customBtns[i]);
       }
     }
 
