@@ -62,9 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Text(_calculation),
             _buildFirstRow(),
-            //buildSecondRow(),
-            //buildThirdRow(),
-            //buildFourthRow(),
+            _buildSecondRow(),
+            _buildThirdRow(),
+            _buildFourthRow(),
             buildEnterButton()
           ],
         );      
@@ -128,11 +128,36 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-/*
-  Row buildRow(){
+  Row _buildSecondRow() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: ,
+      children: [
+        _buildDigitButton('4'),
+        _buildDigitButton('5'),
+        _buildDigitButton('6'),
+        _buildDigitButton(' + '),
+      ],
     );
-  }*/
+  }
+
+  Row _buildThirdRow() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildDigitButton('1'),
+        _buildDigitButton('2'),
+        _buildDigitButton('3'),
+        _buildDigitButton(' - '),
+      ],
+    );
+  }
+
+  Row _buildFourthRow() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildDigitButton('0'),
+      ],
+    );
+  }
 }
